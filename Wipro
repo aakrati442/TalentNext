@@ -1,0 +1,45 @@
+0th index of 3 dimensional array contains 2 dimensional value
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	   // int[][][] arr=new int[5][][];
+	   // arr[0]=new int[2][3];
+	   // System.out.println(arr[0][0][0]);
+		
+		// int[][][] arr=new int[5][][];
+	   // arr[0]=new int[2][];
+	   // System.out.println(arr[0][0][0]);
+		
+	}
+}
+By default value at 0th index of an string array will be null while at integer array will be 0
+ Parent of every class is object
+Int type array can hold less than that of datatype array except Boolean, string
+Object type array can hold all values along with Boolean, strings ,etc
+	Number[] a= new Number[8];
+		a[0]=10;
+		a[1]=90.5f;
+		a[3]='a';
+
+it will throw error as Number class do not include String and char
+equals method comes under object class
+public class Main
+{
+	public static void main(String[] args) {
+	   // Student s1=new Student();
+	   // Student s2=new Student();
+	   // System.out.println(s1.equals(s2));
+		
+		
+		Integer i=12;
+		Object s=new Object();
+		System.out.println(i instanceof Object);
+	}
+}
+
+Is A relationship—inheritance
+If a method is available in parent and child both then the child method is invoked otherwise if it is available in parent then parent one is invoked only
+Parent object cant be called using child reference
+In static method, if an object is present in both the methods then parent method is called because the static member can’t be overridden
+Child specific means it is only present in the child method
