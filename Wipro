@@ -43,3 +43,6 @@ If a method is available in parent and child both then the child method is invok
 Parent object cant be called using child reference
 In static method, if an object is present in both the methods then parent method is called because the static member can’t be overridden
 Child specific means it is only present in the child method
+1 class can extends only 1 class but can implementation of multiple interfaces
+first extend and implement that class along with same return type
+has a relationship is called as aggregation or composition 
