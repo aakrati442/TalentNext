@@ -49,3 +49,60 @@ has a relationship is called as object eg. car has a tyre ( other cls object in 
 return type and accesss modifier do not get count in signature i.e arguments 
 if we change the arguments of the same name methods then it is possible otherwise not
 
+static method- early binding
+non-static method- late binding
+
+public class Tester extends Student{
+        public static void m1(int ...x){
+		        int sum=0;
+		        for(int i:x){
+		            sum+=i;
+		        }
+		        System.out.println(sum);
+		    }
+		    
+		    public static void m1(int[] ...x){
+		        int sum=0;
+		        for(int i:x){
+		            sum+=i;
+		        }
+		        System.out.println(sum);
+		    }
+		    public static void m2(int[] ...x){
+		        int sum=0;
+		        for(int i:x){
+		            sum+=i;
+		        }
+		        System.out.println(sum);
+		    }
+		    
+    	public static void main(String[] args) 
+    	{
+		 m1();
+		 m2();
+		 m1(1,2,3,4,5);
+		 int arr[]={1,21,2,12};
+		 m2(arr);
+		}
+	}
+
+public class Tester extends Student{
+        public static void m1(int... x){
+		        System.out.println("var-arg");
+		    }
+		    
+		    public static void m2(int x){
+		        System.out.println("var");
+		    }
+		    
+    	public static void main(String[] args) 
+    	{
+		 m1();
+		 m2();
+		 m1(1,2,3,4,5);
+		 m2(arr);
+		}
+	}
+
+in overloading, child will be of higher priority than the PARENT
+overloading method always check reference type instead of object type
