@@ -106,3 +106,7 @@ public class Tester extends Student{
 
 in overloading, child will be of higher priority than the PARENT
 overloading method always check reference type instead of object type
+
+checked vs unchecked exception:- 
+compile time are checked and runtime are unchecked exception
+
